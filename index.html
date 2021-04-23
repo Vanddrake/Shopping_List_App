@@ -1,0 +1,38 @@
+<!-- 
+    Author:   Robert Zaranek
+    Date:     November 21, 2020
+
+    Purpose:  The HTML5 portion of the shopping list web application.
+ -->
+
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>My Shopping List</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='js/my_shopping_list.js'></script>
+    <link href="css/my_shopping_list.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <main>
+        <h1>My Shopping List</h1>
+        <h3>By: Robert Zaranek</h3>
+        <hr>
+        <div id='main'>
+            <form id="main_form">
+                <input type="text" id="item_name" placeholder="Item Name" size='15' maxlength="40" required>
+                <input type="number" id="quantity" placeholder="Total" min="1" max="1000" required>
+                <input type="submit" id='submit_button' value="Add">
+                <img src='img/remove.png' id='cancel_edit_button'>
+            </form>
+        </div>
+        <ul id='main_list'></ul>
+        <div id="vertical_line"></div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+/*
+  Author:   Robert Zaranek
+  Date:     November 21, 2020
+
+  Purpose:  The CSS styling for the shopping list web application.
+*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+body {
+    background-color: rgb(205, 236, 255);
+}
+
+/* MAIN FORM */
+
+@media screen and (min-width: 750px) {
+    main {
+        width: 700px;       
+    }
+    #vertical_line {
+        display: block;
+    }
+    input[type=checkbox] {
+        margin: 0 25px 0 5px;
+    }
+    img {
+        padding: 0 5px;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    main {
+        width: 95%;
+    }
+    #vertical_line {
+        display: none;
+    }
+    input[type=checkbox] {
+        margin: 0 5px 0 5px;
+    }
+    img {
+        padding: 0;
+    }
+    .edit_button {
+        padding: 0 0 0 5px;
+    }
+    #cancel_edit_button {
+        margin-left: 5px;
+    }
+}
+
+main {
+    padding: 10px 0 10px 0;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    background-color: rgb(255, 251, 248);
+    filter: drop-shadow( 5px 5px 5px black);
+}
+
+hr {
+    border: 1px solid lightblue;
+}
+
+h1, h3 {
+    margin: 0 0 5px 0;
+}
+
+#vertical_line {
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    z-index: -1;
+    width: 2px;
+    height: 100%;
+    background-color: crimson;
+}
+
+ul {
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 0 0 8px;
+}
+
+img {
+    height: 18px;
+    width: 18px;
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+form {
+    position: relative;
+}
+
+#cancel_edit_button {
+    display: none;
+    position: absolute;
+}
+
+input[type=checkbox] {
+    height: 18px;
+    width: 18px;
+}
+
+input[type=number] {
+    width: 50px;
+}
+
+img:hover, input[type=checkbox]:hover, input[type=submit]:hover {
+    cursor: pointer;
+}
